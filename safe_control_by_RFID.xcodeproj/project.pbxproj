@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077E73C823063BB900BF3B27 /* FiremanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */; };
+		077E73CA23063E0600BF3B27 /* BarLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E73C923063E0600BF3B27 /* BarLeftView.swift */; };
 		07C73D3622F19A8400016AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C73D3522F19A8400016AF7 /* AppDelegate.swift */; };
-		07C73D3822F19A8400016AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C73D3722F19A8400016AF7 /* ViewController.swift */; };
 		07C73D3B22F19A8400016AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C73D3922F19A8400016AF7 /* Main.storyboard */; };
 		07C73D3D22F19A8500016AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C73D3C22F19A8500016AF7 /* Assets.xcassets */; };
 		07C73D4022F19A8500016AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C73D3E22F19A8500016AF7 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,8 @@
 		07C73D6422F1ACA400016AF7 /* BluetoothModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C73D6322F1ACA400016AF7 /* BluetoothModel.swift */; };
 		07F3F0F123053D450096BB6E /* SafeControllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3F0F023053D450096BB6E /* SafeControllController.swift */; };
 		07F3F0F3230540900096BB6E /* BravoSquadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */; };
+		07F3F0F5230545380096BB6E /* SafeControllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3F0F4230545380096BB6E /* SafeControllModel.swift */; };
+		07F3F0F723054FB20096BB6E /* FiremanDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3F0F623054FB20096BB6E /* FiremanDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiremanCollectionViewCell.swift; sourceTree = "<group>"; };
+		077E73C923063E0600BF3B27 /* BarLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLeftView.swift; sourceTree = "<group>"; };
 		07C73D3222F19A8400016AF7 /* safe_control_by_RFID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safe_control_by_RFID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C73D3522F19A8400016AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C73D3722F19A8400016AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07C73D3A22F19A8400016AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C73D3C22F19A8500016AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C73D3F22F19A8500016AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		07C73D6322F1ACA400016AF7 /* BluetoothModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothModel.swift; sourceTree = "<group>"; };
 		07F3F0F023053D450096BB6E /* SafeControllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeControllController.swift; sourceTree = "<group>"; };
 		07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BravoSquadTableViewCell.swift; sourceTree = "<group>"; };
+		07F3F0F4230545380096BB6E /* SafeControllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeControllModel.swift; sourceTree = "<group>"; };
+		07F3F0F623054FB20096BB6E /* FiremanDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiremanDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077E73C52306388800BF3B27 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				07C73D6322F1ACA400016AF7 /* BluetoothModel.swift */,
+				07F3F0F623054FB20096BB6E /* FiremanDatabase.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		077E73C6230638AB00BF3B27 /* SafeControllPage */ = {
+			isa = PBXGroup;
+			children = (
+				07F3F0F023053D450096BB6E /* SafeControllController.swift */,
+				07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */,
+				07F3F0F4230545380096BB6E /* SafeControllModel.swift */,
+				077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */,
+				077E73C923063E0600BF3B27 /* BarLeftView.swift */,
+			);
+			path = SafeControllPage;
+			sourceTree = "<group>";
+		};
 		07C73D2922F19A8400016AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +130,13 @@
 		07C73D3422F19A8400016AF7 /* safe_control_by_RFID */ = {
 			isa = PBXGroup;
 			children = (
+				077E73C6230638AB00BF3B27 /* SafeControllPage */,
+				077E73C52306388800BF3B27 /* Singleton */,
 				07C73D3522F19A8400016AF7 /* AppDelegate.swift */,
-				07C73D3722F19A8400016AF7 /* ViewController.swift */,
 				07C73D3922F19A8400016AF7 /* Main.storyboard */,
 				07C73D3C22F19A8500016AF7 /* Assets.xcassets */,
 				07C73D3E22F19A8500016AF7 /* LaunchScreen.storyboard */,
 				07C73D4122F19A8500016AF7 /* Info.plist */,
-				07C73D6322F1ACA400016AF7 /* BluetoothModel.swift */,
-				07F3F0F023053D450096BB6E /* SafeControllController.swift */,
-				07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */,
 			);
 			path = safe_control_by_RFID;
 			sourceTree = "<group>";
@@ -266,10 +291,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F3F0F3230540900096BB6E /* BravoSquadTableViewCell.swift in Sources */,
-				07C73D3822F19A8400016AF7 /* ViewController.swift in Sources */,
+				07F3F0F5230545380096BB6E /* SafeControllModel.swift in Sources */,
 				07C73D3622F19A8400016AF7 /* AppDelegate.swift in Sources */,
 				07C73D6422F1ACA400016AF7 /* BluetoothModel.swift in Sources */,
 				07F3F0F123053D450096BB6E /* SafeControllController.swift in Sources */,
+				077E73C823063BB900BF3B27 /* FiremanCollectionViewCell.swift in Sources */,
+				07F3F0F723054FB20096BB6E /* FiremanDatabase.swift in Sources */,
+				077E73CA23063E0600BF3B27 /* BarLeftView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P4CMS2MX4;
 				INFOPLIST_FILE = safe_control_by_RFID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P4CMS2MX4;
 				INFOPLIST_FILE = safe_control_by_RFID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

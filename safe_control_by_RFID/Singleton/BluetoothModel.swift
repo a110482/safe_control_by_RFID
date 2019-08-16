@@ -22,7 +22,9 @@ class BluetoothModel:NSObject{
     var delegate:BluetoothModelDelegate?
     var sendCharacteristic:CBCharacteristic?
     
-    override init() {
+    static let singletion = BluetoothModel()
+    
+    private override init() {
         super.init()
         let centralQueue:DispatchQueue = DispatchQueue(label: "centralQueue")
         centralManager = CBCentralManager(delegate: self, queue: centralQueue)
@@ -57,8 +59,13 @@ extension BluetoothModel:CBCentralManagerDelegate{
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        print("didConnect")
+        print("Connect")
         customPeripheral?.discoverServices([customCBUUID])
+    }
+    
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        print("disConnect")
+        centralManager?.scanForPeripherals(withServices:nil, options: nil)
     }
 }
 
