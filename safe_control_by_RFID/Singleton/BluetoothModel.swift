@@ -49,7 +49,7 @@ extension BluetoothModel:CBCentralManagerDelegate{
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         
-        if peripheral.name == nil{return}
+        if peripheral.name != "HC-08"{return}
         print("name: \(peripheral.name!)")
 
         customPeripheral = peripheral

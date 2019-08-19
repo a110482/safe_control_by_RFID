@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		077E73C823063BB900BF3B27 /* FiremanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */; };
 		077E73CA23063E0600BF3B27 /* BarLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E73C923063E0600BF3B27 /* BarLeftView.swift */; };
+		079351D62309027D00069012 /* SafeControllLogPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079351D52309027D00069012 /* SafeControllLogPageViewController.swift */; };
+		079351DA23094C6100069012 /* SafeControllLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079351D923094C6100069012 /* SafeControllLogTableViewCell.swift */; };
 		07C73D3622F19A8400016AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C73D3522F19A8400016AF7 /* AppDelegate.swift */; };
 		07C73D3B22F19A8400016AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C73D3922F19A8400016AF7 /* Main.storyboard */; };
 		07C73D3D22F19A8500016AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C73D3C22F19A8500016AF7 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiremanCollectionViewCell.swift; sourceTree = "<group>"; };
 		077E73C923063E0600BF3B27 /* BarLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLeftView.swift; sourceTree = "<group>"; };
+		079351D52309027D00069012 /* SafeControllLogPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeControllLogPageViewController.swift; sourceTree = "<group>"; };
+		079351D923094C6100069012 /* SafeControllLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeControllLogTableViewCell.swift; sourceTree = "<group>"; };
 		07C73D3222F19A8400016AF7 /* safe_control_by_RFID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safe_control_by_RFID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C73D3522F19A8400016AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C73D3A22F19A8400016AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,12 +103,30 @@
 			isa = PBXGroup;
 			children = (
 				07F3F0F023053D450096BB6E /* SafeControllController.swift */,
-				07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */,
 				07F3F0F4230545380096BB6E /* SafeControllModel.swift */,
-				077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */,
-				077E73C923063E0600BF3B27 /* BarLeftView.swift */,
+				079351D4230901B000069012 /* BravoSquadTableViewCell */,
+				079351D32309008000069012 /* SafeControllLogPage */,
 			);
 			path = SafeControllPage;
+			sourceTree = "<group>";
+		};
+		079351D32309008000069012 /* SafeControllLogPage */ = {
+			isa = PBXGroup;
+			children = (
+				079351D52309027D00069012 /* SafeControllLogPageViewController.swift */,
+				079351D923094C6100069012 /* SafeControllLogTableViewCell.swift */,
+			);
+			path = SafeControllLogPage;
+			sourceTree = "<group>";
+		};
+		079351D4230901B000069012 /* BravoSquadTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				07F3F0F22305408F0096BB6E /* BravoSquadTableViewCell.swift */,
+				077E73C923063E0600BF3B27 /* BarLeftView.swift */,
+				077E73C723063BB900BF3B27 /* FiremanCollectionViewCell.swift */,
+			);
+			path = BravoSquadTableViewCell;
 			sourceTree = "<group>";
 		};
 		07C73D2922F19A8400016AF7 = {
@@ -292,10 +314,12 @@
 			files = (
 				07F3F0F3230540900096BB6E /* BravoSquadTableViewCell.swift in Sources */,
 				07F3F0F5230545380096BB6E /* SafeControllModel.swift in Sources */,
+				079351D62309027D00069012 /* SafeControllLogPageViewController.swift in Sources */,
 				07C73D3622F19A8400016AF7 /* AppDelegate.swift in Sources */,
 				07C73D6422F1ACA400016AF7 /* BluetoothModel.swift in Sources */,
 				07F3F0F123053D450096BB6E /* SafeControllController.swift in Sources */,
 				077E73C823063BB900BF3B27 /* FiremanCollectionViewCell.swift in Sources */,
+				079351DA23094C6100069012 /* SafeControllLogTableViewCell.swift in Sources */,
 				07F3F0F723054FB20096BB6E /* FiremanDatabase.swift in Sources */,
 				077E73CA23063E0600BF3B27 /* BarLeftView.swift in Sources */,
 			);

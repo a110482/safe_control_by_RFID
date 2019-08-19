@@ -22,8 +22,8 @@ class FiremanDatabase:NSObject{
     private let nameDic:Dictionary<String,String> = [
         "7991B08C" : "蔡佩珊",
         "A9DB18B" : "俞怡珊",
-        "BA719E15" : "張書豪",
-        "CAD8E15" : "廖志明",
+        "6CD06CF" : "張書豪",
+        "AD156CF" : "廖志明",
         ]
     
     private override init(){
