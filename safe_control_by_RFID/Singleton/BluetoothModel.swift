@@ -13,7 +13,7 @@ fileprivate let customCBUUID = CBUUID(string: "0xFFE0")
 fileprivate let customChatacteristic = CBUUID(string: "0xFFE1")
 
 protocol BluetoothModelDelegate {
-    func reciveRFIDDate(uuid:String)
+    func didReciveRFIDDate(uuid:String)
 }
 
 class BluetoothModel:NSObject{
@@ -97,7 +97,7 @@ extension BluetoothModel:CBPeripheralDelegate{
         guard characteristic.uuid == customChatacteristic else{return}
 
         if let val = characteristic.value, let rfidUUID = String(data: val, encoding: .utf8){
-            self.delegate?.reciveRFIDDate(uuid: rfidUUID)
+            self.delegate?.didReciveRFIDDate(uuid: rfidUUID)
         }
         else{
             print("recive data: data error")

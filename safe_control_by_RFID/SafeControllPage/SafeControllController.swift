@@ -22,6 +22,18 @@ class SafeControllController:UIViewController{
         groupTableView.delegate = self
         groupTableView.dataSource = self
         model.delegate = self
+        
+        // test code
+//        let nameDic:Dictionary<String,String> = [
+//            "7991B08C" : "蔡佩珊",
+//            "A9DB18B" : "俞怡珊",
+//            "6CD06CF" : "張書豪",
+//            "AD156CF" : "廖志明",
+//        ]
+//        for uuid in nameDic.keys{
+//            model.reciveRFIDDate(uuid: uuid)
+//        }
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! SafeControllLogPageViewController

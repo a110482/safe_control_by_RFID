@@ -72,7 +72,7 @@ extension SafeControllModel{
 
 // delegate from bluetooth
 extension SafeControllModel:BluetoothModelDelegate{
-    func reciveRFIDDate(uuid: String) {
+    func didReciveRFIDDate(uuid: String) {
         if !removeFireman(by: uuid){
             if(!addFireman(by: uuid)){
                 print("uuid not fuund in database!")
